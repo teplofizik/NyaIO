@@ -174,13 +174,13 @@ namespace NyaIO.SerialConnection
                     // Обработаем байты из порта
                     var Readed = ReadExistingBytes();
                     Parser.Process(Readed);
+                }
 
-                    // Проверим, не был ли получен пакет
-                    var Packet = Parser.GetParsedPacket();
-                    if (Packet != null)
-                    {
-                        PacketPeceived?.Invoke(this, new Events.PacketReceivedEventArgs(Packet));
-                    }
+                // Проверим, не был ли получен пакет
+                var Packet = Parser.GetParsedPacket();
+                if (Packet != null)
+                {
+                    PacketPeceived?.Invoke(this, new Events.PacketReceivedEventArgs(Packet));
                 }
                 Thread.Sleep(1);
             }
