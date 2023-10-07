@@ -101,7 +101,7 @@ namespace NyaIO.SerialConnection
         /// Запись пакета в порт
         /// </summary>
         /// <param name="Pkt">Пакет</param>
-        protected void Write(byte[] Data)
+        public void Write(byte[] Data)
         {
             if (Connected)
             {
