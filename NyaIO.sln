@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NyaIO", "src\NyaIO\NyaIO.csproj", "{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Debug|x64.ActiveCfg = Debug|x64
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Debug|x64.Build.0 = Debug|x64
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Debug|x86.ActiveCfg = Debug|x86
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Debug|x86.Build.0 = Debug|x86
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Release|x64.ActiveCfg = Release|x64
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Release|x64.Build.0 = Release|x64
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Release|x86.ActiveCfg = Release|x86
+		{87B8EF2D-3A63-4BBC-8239-76FBB0C7711D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DA60787-82FB-4E74-8B86-523D95E17936}
+	EndGlobalSection
+EndGlobal
