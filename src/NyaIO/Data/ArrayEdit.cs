@@ -145,17 +145,14 @@ namespace NyaIO.Data
         static public long WriteString(this byte[] Data, long Offset, string Text, long Length)
         {
             int i;
+            var Encoded = UTF8Encoding.UTF8.GetBytes(Text);
 
             for (i = 0; i < Length; i++)
             {
-                if (i < Text.Length)
-                {
-                    Data[Offset + i] = Convert.ToByte(Text[i]);
-                }
+                if (i < Encoded.Length)
+                    Data[Offset + i] = Encoded[i];
                 else
-                {
                     Data[Offset + i] = 0;
-                }
             }
 
             return Offset + Length;
@@ -170,17 +167,14 @@ namespace NyaIO.Data
         /// <returns>Readed string</returns>
         static public string ReadString(this byte[] Data, long Offset, long Length)
         {
-            string Temp = "";
-
             for (int i = 0; i < Length; i++)
             {
                 byte Char = Data[Offset + i];
-                if (Char == 0) break;
-
-                Temp += Convert.ToChar(Char);
+                if (Char == 0)
+                    return UTF8Encoding.UTF8.GetString(Data.ReadArray(Offset, i));
             }
 
-            return Temp;
+            return UTF8Encoding.UTF8.GetString(Data.ReadArray(Offset, Length));
         }
 
         /// <summary>

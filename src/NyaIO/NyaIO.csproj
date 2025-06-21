@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<TargetFrameworks>netcoreapp3.1;net40;netstandard2.0;net6.0;net7.0</TargetFrameworks>
 		<Platforms>AnyCPU;x64;x86</Platforms>
 		<Authors>Alexey Sonkin</Authors>
 		<Description>Library for creating/parsing/editing raw packets for custom protocols or file formats</Description>
 		<PackageProjectUrl>https://github.com/teplofizik/NyaIO.git</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/teplofizik/NyaIO.git</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Version>1.0.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
