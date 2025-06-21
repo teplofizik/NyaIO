@@ -10,8 +10,4 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Version>1.0.1</Version>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="System.IO.Ports" Version="7.0.0" />
-	</ItemGroup>
 </Project>
