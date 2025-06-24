@@ -4,14 +4,19 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  <Version>1.0.1</Version>
+	  <PackageVersion>1.0.1</PackageVersion>
+	  <VersionPrefix>1.0.1</VersionPrefix>
+	  <AssemblyVersion>1.0.1</AssemblyVersion>
+	  <FileVersion>1.0.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.IO.Ports" Version="9.0.6" />
+	  <PackageReference Include="System.IO.Ports" Version="9.0.6" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\NyaIO\NyaIO.csproj" />
+	  <ProjectReference Include="..\src\NyaIO\NyaIO.csproj" />
   </ItemGroup>
 
 </Project>
